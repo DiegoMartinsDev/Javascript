@@ -1,0 +1,40 @@
+body{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    }
+
+h1{
+    font-family: sans-serif;
+    font-weight: bolder;
+    }
+
+input{
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+#form{
+    width: 40%;
+}
+button{
+    background-color: burlywood;
+    color: black;
+    border: brown;
+    width: 100%; 
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+h3{
+    font-family: sans-serif;
+}
