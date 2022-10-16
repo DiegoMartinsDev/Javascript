@@ -5,22 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detector de Consoante</title>
-     Digita apenas um caracter:
+     Digita apenas uma nota em cada campo:
 
-     <input  id="char" type="text"> <br/>
+     <form action="" method="post">
+     Nota 1<input  id="not1" type="number"> <br/> 
+     Nota 2<input  id="not2" type="number"> <br/>
+    </form>
+
      <button onclick="check()">Checar </button>
 </head>
 <body>
     <script type="text/javascript">
         function check(){
-            var letra = document.getElementById('char').value;
-            letra = letra.toLowerCase(); 
-
-            if(letra=='a' || letra=='e' || letra=='i' || letra=='o' || letra=='u' )
-            alert("vogal");
-            else
-                alert('consoante');
+            var nota1 = parsInt(document.getElementById('not1').value)
+            var nota2 = parsInt(document.getElementById('not2').value)
+            document.getElementById('resultado').innerHTML = n1 + n2;
+            
         }
+        
+       
     </script>
 </body>
 </html>
